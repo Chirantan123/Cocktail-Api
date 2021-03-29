@@ -133,17 +133,15 @@ body {
 .label {
   display: 'list-item';
   position: absolute;
-  height: 10px;
-  /*width: auto;*/
-  width: 50px;
+  height: 30px;
+  width: 180px;
   color: white;
   bottom: 0px;
   right: 0px;
-  transform: scaleY(1.5) scaleX(1.5);
-  border-radius: 30px;
+  transform: scaleY(2.5) scaleX(1.5);
+  border-radius: 10px;
+  font-weight: bold;
   text-align: center;
-  font-size: 20px;
-  padding: 30px 110px 60px 20px;
   background-color: black;
   text-transform: uppercase;
   z-index: 1;
