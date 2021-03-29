@@ -127,8 +127,8 @@ body {
   width: 22%;
   position: relative;
   margin-bottom: 60px;
-  /* border: 20px solid white;
-  border-radius: 15px; */
+  border: 20px solid white;
+  border-radius: 15px;
 }
 .label {
   display: 'list-item';
@@ -146,7 +146,7 @@ body {
   padding: 30px 110px 60px 20px;
   background-color: black;
   text-transform: uppercase;
-  /* z-index: 1; */
+  z-index: 1;
 }
 .blur:hover {
   opacity: 0.5;
