@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../../Workspace"
+		},
+		{
+			"path": "../../../demo-project"
+		}
+	],
+	"settings": {}
+}
