@@ -6,14 +6,14 @@
   <img src="https://media1.giphy.com/media/3oEjI6SIIHBdRxXI40/200.gif">
   </div>
   <div class="container">
-  <div class="drink-image" v-for="drink in getDetails.drinks" :key="drink.id">
-  <img id="img" v-bind:src="drink.strDrinkThumb"/>
+  <div v-for="drink in getDetails.drinks" :key="drink.id">
+  <img class="drink-image" v-bind:src="drink.strDrinkThumb"/>
   </div>
   <div class="instruction" v-for="drink in getDetails.drinks" :key="drink.id">
   <h1>{{drink.strDrink}}</h1>
-  <p>{{drink.strInstructions}}</p>
+  <p id="description">{{drink.strInstructions}}</p>
   <div v-for="(value,key) in drink" :key="key.id">
-  <p v-if="key.substring(0,13) === 'strIngredient' && value!=null">
+  <p class="check" v-if="key.substring(0,13) === 'strIngredient' && value!=null">
   <input class="checkbox" type="checkbox" id="ingredient" checked>
    {{value}}
   </p>
@@ -48,11 +48,17 @@ export default {
     margin-top: 100px;
     margin-left: 120px;
 }
+.check {
+  color: #102A42;
+  font-size: 27px;
+  font-family: "Open Sans","sans-serif";
+  margin-bottom: 1px;
+}
 .drink-image {
   border:20px solid white;
   border-radius: 15px;
-  height: 700px;
-  width: 700px;
+  height: 600px;
+  width: 800px;
 }
 .instruction {
     font-size: 30px;
@@ -60,14 +66,14 @@ export default {
 }
 .checkbox {
   margin-right: 20px;
+  /*color: black;*/
 }
 input[type=checkbox] {
     transform: scale(2);
     -ms-transform: scale(2);
     -webkit-transform: scale(2);
-    margin-bottom: 30px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .container, .drink-img, .instruction, .checkbox {
     width: 100%;
   }
@@ -79,5 +85,13 @@ input[type=checkbox] {
   font-size: 40px;
   height: 100px;
   width: 100px;
+}
+#description {
+  color: #617D98;
+}
+h1 {
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  color:#102A42;
 }
 </style>

@@ -29,7 +29,7 @@ export default new Vuex.Store({
     setCocktailAction ({ commit }, state) {
       const axiosConfig = {
         method: 'get',
-        url: 'https://www.thecocktaildb.com/api/json/v1/1/search.php?f=c'
+        url: 'https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a'
       }
       axios(axiosConfig)
         .then((e) => {

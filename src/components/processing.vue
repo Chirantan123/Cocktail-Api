@@ -25,8 +25,8 @@ export default {
 <style-scoped>
 .heading {
     display: inline-block;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     padding: 5px;
     margin-left: 50%;
 }

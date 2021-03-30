@@ -9,7 +9,7 @@
   <h1 class="heading" id="error"></h1>
   </div>
   <div class="box">
-    <div  class="drink blur" v-for="drink in getList.drinks" :key="drink.id">
+    <div  class="drink" v-for="drink in getList.drinks" :key="drink.id">
     <img  @click="get(drink.idDrink)" class="drink-img" id="img" :src="drink.strDrinkThumb"/>
     <label @click="get(drink.idDrink)" class ="label" :for="drink.strDrink" :id="drink.strDrink">{{drink.strDrink}}</label>
   </div>
@@ -124,29 +124,35 @@ body {
     flex-flow: wrap;
 }
 .drink {
-  width: 22%;
+  width: 25%;
+  height:  400px;
   position: relative;
   margin-bottom: 60px;
-  border: 20px solid white;
-  border-radius: 15px;
+  padding: 40px;
+  /* border: 20px solid white;
+  border-radius: 15px; */
 }
 .label {
   display: 'list-item';
   position: absolute;
   height: 30px;
-  width: 180px;
+  width: 290px;
   color: white;
   bottom: 0px;
   right: 0px;
   transform: scaleY(2.5) scaleX(1.5);
   border-radius: 10px;
+  font-family: monospace;
   font-weight: bold;
+  font-size: 23px;
+  letter-spacing: 3px;
   text-align: center;
+  letter-spacing: 5px;
   background-color: black;
   text-transform: uppercase;
   z-index: 1;
 }
-.blur:hover {
+.drink:hover {
   opacity: 0.5;
   transition: 1s;
 }
@@ -155,26 +161,12 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
+  border: 20px solid white;
+  border-radius: 15px;
 }
 @media screen and (max-width: 800px) {
   .drink, .drink-img , .label , .heading, .Search, .box {
     width: 100%;
   }
 }
-/* .box.box1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 60px;
-    margin:10px;
-} */
- /*.bottom {
-    margin-left:500px;
-    float:right;
-    display:block;
-    height:50px;
-    width:100px;
-    text-align: center;
-    background-color: white;
-}*/
 </style>
