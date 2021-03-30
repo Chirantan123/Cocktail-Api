@@ -135,22 +135,18 @@ body {
 .label {
   display: 'list-item';
   position: absolute;
-  height: 30px;
-  width: 290px;
   color: white;
   bottom: 0px;
   right: 0px;
-  transform: scaleY(2.5) scaleX(1.5);
   border-radius: 10px;
   font-family: monospace;
   font-weight: bold;
-  font-size: 23px;
-  letter-spacing: 3px;
-  text-align: center;
+  font-size: 40px;
   letter-spacing: 5px;
+  text-align: center;
   background-color: black;
   text-transform: uppercase;
-  z-index: 1;
+  padding: 20px;
 }
 .drink:hover {
   opacity: 0.5;
@@ -165,7 +161,7 @@ body {
   border-radius: 15px;
 }
 @media screen and (max-width: 800px) {
-  .drink, .drink-img , .label , .heading, .Search, .box {
+  .drink, .heading, .Search {
     width: 100%;
   }
 }

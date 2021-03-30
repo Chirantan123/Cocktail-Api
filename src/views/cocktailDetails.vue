@@ -66,7 +66,6 @@ export default {
 }
 .checkbox {
   margin-right: 20px;
-  /*color: black;*/
 }
 input[type=checkbox] {
     transform: scale(2);
@@ -74,7 +73,7 @@ input[type=checkbox] {
     -webkit-transform: scale(2);
 }
 @media screen and (max-width: 900px) {
-  .container, .drink-img, .instruction, .checkbox {
+  .drink-image, .instruction {
     width: 100%;
   }
 }
